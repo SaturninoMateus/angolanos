@@ -1,0 +1,1 @@
+cmd_dest/include/scsi/.install := perl scripts/headers_install.pl dest/include/scsi x86  /mnt/aos/sources/linux-3.7.1/include/scsi/scsi_bsg_fc.h  /mnt/aos/sources/linux-3.7.1/include/scsi/scsi_netlink.h  /mnt/aos/sources/linux-3.7.1/include/scsi/scsi_netlink_fc.h ; for F in ; do echo "\#include <asm-generic/$$F>" > dest/include/scsi/$$F; done; touch dest/include/scsi/.install

@@ -1,0 +1,1 @@
+cmd_dest/include/linux/isdn/.install := perl scripts/headers_install.pl dest/include/linux/isdn x86  /mnt/aos/sources/linux-3.7.1/include/uapi/linux/isdn/capicmd.h ; for F in ; do echo "\#include <asm-generic/$$F>" > dest/include/linux/isdn/$$F; done; touch dest/include/linux/isdn/.install

@@ -1,0 +1,1 @@
+cmd_dest/include/linux/mmc/.install := perl scripts/headers_install.pl dest/include/linux/mmc x86  /mnt/aos/sources/linux-3.7.1/include/uapi/linux/mmc/ioctl.h ; for F in ; do echo "\#include <asm-generic/$$F>" > dest/include/linux/mmc/$$F; done; touch dest/include/linux/mmc/.install
