@@ -1,0 +1,1 @@
+Distribuição GNU/Linux Angolana
